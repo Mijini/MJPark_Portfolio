@@ -1,0 +1,342 @@
+@media(max-width:480px){
+    /* 폰트사이즈 */
+    h1{font-size: 5em;}
+    h2{font-size: 3.125em;}
+    h3{font-size: 3.75em;}
+    h4{font-size: 2.5em;}
+    h5{font-size: 1.875em;}
+    h6{font-size: 0.75em;}
+    p{font-size: 1.25em;}   
+    /* 메인 */
+    .main{
+        width: 100%;
+        height: 323px;
+        background-image: url(../images/m_main.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .main img{
+        display: none;
+    }
+    /* 컨텐츠1 */
+    .content1{
+        position: relative;
+        width: 100%; height: 402px;
+        background-image: url(../images/m_con1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .con1_img{
+        width: 100%;
+        display: none;
+    }
+    .gumon{
+        width: 20%;
+        position: absolute;
+        top: 70%; left: 15%;
+        z-index: 99;
+    }
+    .gumon img{
+        max-width: 100%;
+    }
+    /* 컨텐츠2 */
+    .content2{
+        width: 100%; height: 100%;
+        position: relative;
+    }
+    .con2_title{
+        width: 100%;
+        position: absolute;
+        left:50%; top: 35px;
+        transform: translate(-50%,-50%);        
+        text-align: center;
+        margin-top: 47px;
+    }
+    .con2_title h4{
+        font-size: 2em;
+        position:relative;
+        z-index: 200;
+    }
+    .con2_title h6{
+        font-size: 1.3em;
+        font-weight: lighter;
+        padding-top: 10px;
+    
+    }
+    .con2_title div{
+        width: 100%; height: 100%;
+        position: absolute;
+        top: 10px; left: 0;
+        z-index: 100;
+    }
+    .con2_title div img{
+        max-width: 100%;
+    }
+    .up-on-scroll {
+        transition: transform 1s, opacity 1s;
+    }
+    .gray,.pink{
+        width: 50%;
+    }
+    .gray div img{
+        margin: 25px 0 0 0;        
+        max-width: 100%;
+    }
+    
+    .gray{
+        background-color: #e2e1e0;
+        float: left;
+    }
+    .gray div{
+        width: 100%; height: 100%;
+        padding: 115px 0 0 0;
+        float: right;
+        text-align: center;
+    }
+    .gray h6{
+        font-weight: lighter;
+        text-align: center;
+        margin: 20px 0 0 0 ;
+        padding-bottom: 20px;
+    }
+    .gray span{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    
+    .gray div img{
+        margin: 25px 0 0 0;        
+        max-width: 90%;
+    }
+    
+    .pink{
+        background-color: #fdf2ed;
+        float: left;
+    }
+    .pink div:nth-child(1){
+        width: 100%; height: 100%;
+        padding: 115px 0 0 0;
+        float: left;
+        text-align: center;
+        position: relative;
+    }
+    .pink h6{
+        font-weight: lighter;
+        text-align: center;
+        margin: 0 0 0 0 ;
+        padding-bottom: 0;
+    }
+    .pink span{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .pink div:nth-child(1)>img:nth-child(1){
+        margin: 30px 0 0 0;        
+        max-width: 100%;
+    }
+    .yellow_line{
+        position: absolute;
+        top:410px; left:10px;
+        width: 100%; height: 18px;
+    }
+    .pink div:nth-child(2) img{
+        margin: 200px 0 0 -20px;
+        position: absolute;
+        left: 0; top: 0;
+        transform: scale(60%);
+    }
+    .orange{
+        width: 100%; height: 141px;
+        background-image: url(../images/m_con2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        padding-top: 0;
+        color: white;
+    }
+    .orange div{
+        padding: 40px 0 0 0;
+    }
+    .orange h5{
+        font-weight: lighter;
+        font-size: 1em;
+    }
+    .orange h3{
+        margin-top: 0;
+        padding-bottom: 0;
+        font-weight: lighter;
+        font-size: 1.5em;
+    }
+    .orange span{
+        color: black;
+        font-size: 1.875rem;
+        font-weight: bold;
+    }
+    /* 컨텐츠3 */
+    .content3{
+        position: relative;
+    }
+    .content3 .con3_bg{
+        width: 100%;
+        display: block;
+    }
+    .content3 .con3_gif{
+        position: absolute;
+        left: 22%; top: 10%;
+        width: 18%;
+    }
+    /* 컨텐츠4 */
+    .content4{
+        width: 100%; height: 163px;
+        background-image: url(../images/m_con4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .content4 img{
+        width: 100%;
+        display: none;
+    }
+    /* 컨텐츠5 */
+    .content5{
+        width: 100%; height: 1536px;
+        background-image: url(../images/m_con5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .content5 img{
+        display: none;
+    }
+    /* 컨텐츠6 */
+    .content5{
+        width: 100%; height: 370px;
+        background-image: url(../images/m_con6.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .content6 img{
+        display: none;
+    }
+    /* 컨텐츠7 */
+    .content7{
+        width: 100%; height: 753px;
+        background-image: url(../images/m_con7.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .content7 img{
+        display: none;
+    }
+    /* 컨텐츠8 */
+    .autoplay{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .autoplay div img{
+        box-shadow: 4px 4px 5px #8c5943;
+    }
+    .content8{
+        width: 100%; height: 715px;
+    }
+    .con8_text{
+        margin: 217px 0 100px;
+        text-align: center;
+    }
+    .con8_text h4{
+        display: inline-block;
+    }
+    .content8 h2 span{
+        color: #ed6535;
+    }
+    .con8_bg{
+        width: 100%;
+        background-image: url(../images/content8_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    /* .autoplay div img{
+        width: 249px; height: 377px;
+    } */
+    /*컨텐츠8 슬랙 수정*/
+    .content8 .slick-slide{
+        margin: 20px 10px;
+    }
+    .content8 .center img{
+        max-width: 100%;
+    }
+    .content8 .a-left{
+        position: absolute; 
+        top: 50%; left: -100px;
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
+    }
+    .content8 .a-right{
+        position: absolute; 
+        top: 50%; right: -100px;
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
+    }
+    /* 컨텐츠9 */
+    
+    /* 컨텐츠10 */
+    .content10{
+        width: 100%; height: 900px;
+        background-color: #fbfbfb;
+        position: relative;
+    }
+    .content10 .inner{
+        height: 100%;
+        position: unset;
+    }
+    .text1{
+        width: 372px; height: 46px;
+        display: inline-block;
+        position: absolute;
+        top: 0; left: 0;
+        background-image: url(../images/m_con10_text1.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .text1 img{
+        display: none;
+    }
+    .text2{
+        width: 272px; height: 42px;
+        display: inline-block;
+        position: absolute;
+        bottom: 0; right: 0;
+        background-image: url(../images/m_con10_text2.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .text2 img{
+        display: none;
+    }
+    .insta_logo{
+        padding: 120px 0 50px 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    /* 푸터 */
+    
+    /* 고정 문의하기 메뉴 */
+    
+    /* 탑 버튼 */
+    .topbtn{
+        background-color: rgb(243, 242, 242);
+        border-radius: 30px;
+        width: 40px; height: 40px;
+        text-align: center;
+        line-height: 2.3em;
+        font-weight: 900;
+        position: fixed;
+        top: 95%; right: 0.5%;
+        cursor: pointer;
+    }
+    .topbtn a{
+        text-decoration: none;
+        color: black;
+    }
+}

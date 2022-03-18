@@ -1,0 +1,328 @@
+/********************* 전체공통 **************************/
+*{margin: 0; padding: 0;}
+#wrap{margin: 0 auto; width: 100%;}
+ul li {list-style: none;}
+ul li a{text-decoration: none; color: black;}
+a{text-decoration: none; color: black;}
+.clear{clear: both;}
+.inner{width: 90%; margin: 0 auto;}
+.ONE-Mobile-Regular{font-family: ONE-Mobile-Regular;}
+.up-on-scroll {
+    transition: transform 2s, opacity 1s;
+}
+@font-face {
+    font-family: 'ONE-Mobile-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h1{font-size: 5rem;}
+h2{font-size: 3.125rem;}
+h3{font-size: 2.5rem;}
+h4{font-size: 1.875rem; font-weight: lighter;}
+h5{font-size: 1.25rem; font-weight: lighter;}
+p{font-size: 0.938rem;}
+/********************************** 헤더 *********************************/
+header .inner div{
+    float: left;
+}
+/****** 네비 ******/
+nav{
+    float: right;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+nav >ul >li{
+    float: left;
+    width: 25%;
+    padding: 15px 0;
+}
+nav ul li:nth-child(3){
+    position: relative;
+    z-index: 99;
+}
+
+nav ul li:nth-child(3) ul li{
+    float: left;
+    width: 100%;
+}
+nav >ul >li:hover ul{
+    display: block;
+}
+nav >ul >li:nth-child(3):hover{
+    background-color: #4c6efe;
+    border-radius: 5px 5px 0 0;
+}
+nav >ul .sub{
+    position: absolute;
+    top: 35px;
+    background-color: #4c6efe;
+    border-radius: 0 0 5px 5px;
+    display: none;
+}
+.sub{
+    padding: 10px 0;
+}
+.sub> li:hover{
+    background-color: black;
+}
+.sub> li{
+    padding: 10px 0;
+}
+.sub> li> a{
+    color: white;
+}
+
+/*********** 메인 **********/
+.s4_main{
+    height: 450px;
+    text-align: center;
+}
+.s4_main_logo img{
+    width: 120px; height: 40px;
+    object-fit: cover;
+    padding-top: 95px;
+}
+.s4_main h3{
+    margin: 25px 0 75px 0;
+}
+/*********** 폼 **********/
+form{
+    border: none;
+    width: 100%; height: 100%;
+}
+form .inner{
+    height: 100% ;
+}
+form .inner div{
+    padding: 40px 0 0 30px;
+}
+label{
+    font-size: 30px;
+} 
+#company,#cectors,#phone,#email{
+    width: 100%; height: 60px;
+    border: solid 1px #a29f9f;
+    margin: 25px 0 25px 0;
+    font-size: 25px;
+    color: #8c8c8c;
+}
+#contact{
+    width: 100%; height: 400px;
+    border: solid 1px #a29f9f;
+    margin: 25px 0 25px 0;
+    font-size: 25px;
+    color: #8c8c8c;
+}
+.checkbox{
+    width: 17px; height: 17px;
+    border: solid 1px #a29f9f;
+    margin: 10px 0;
+}
+.c_text{
+    font-size: 15px;
+    color: #908f8f;
+    margin-left: 15px;
+    position: relative;
+    top: -5px;
+}
+.submit{
+    width: 100%; height: 116px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 30px;
+    margin-top: 85px;
+    cursor: pointer;
+}
+/************** 푸터 ****************/
+footer{
+    width: 100%; height: 423px;
+    text-align: center; color: #838383;
+}
+.f1 img{
+    margin: 60px 0 60px 0;
+    box-sizing: border-box;
+}
+.f1 ul{
+    width: 65%;
+    margin: 150px auto;
+}
+.f1 ul li{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.f1 > p{
+    font-size: 12px;
+}
+.f2{
+    width: 100%; height: 129px; background-color: #f7f8f9;
+}
+.f2 p{
+    line-height: 8.5em;
+}
+.topbtn{
+    background-color: rgba(230, 227, 227, 0.795);
+    border-radius: 30px;
+    width: 50px; height: 50px;
+    text-align: center;
+    line-height: 3.2em;
+    position: fixed;
+    top: 90%; right: 2%;
+    cursor: pointer;
+}
+@media screen and (max-width: 960px){
+    nav{
+        width: 60%;
+    }
+    .f1 >p{
+        padding: 5% 10%;
+        box-sizing:border-box;
+    }
+    .f1 ul li{
+        float: none;
+        width: 100%;
+        padding: 10px;
+    }
+    
+}
+@media screen and (max-width: 768PX){
+    nav{
+        width: 70%;
+    }
+    .s4_main >div >h4{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 480PX){
+    .btnPosition{
+        width: 30px; height: 30px;
+        position: absolute;
+        top: 34px; right: 30px;
+    }
+    .menuBtn{
+        position: relative;
+        transition: .3s ease-in-out;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .menuBtn >span{
+        position: absolute;
+        height: 5px;
+        border-radius: 4px;
+        width: 100%;
+        background: #78797a;
+        bottom: 0;
+        z-index: 1000;
+        transition: all .3s;
+    }
+    .menuBtn >span:nth-child(1){
+        top: 0;
+    }
+    .menuBtn >span:nth-child(2),.menuBtn >span:nth-child(3){
+        top: 10px;
+    }
+    .menuBtn >span:nth-child(4){
+        top: 20px;
+    }
+    .menuBtn.active >span:nth-child(1),.menuBtn.active >span:nth-child(4){
+        opacity: 0;
+    }
+    .menuBtn.active >span:nth-child(2){
+        transform: rotate(45deg);
+    }
+    .menuBtn.active >span:nth-child(3){
+        transform: rotate(-45deg);
+    }
+    nav{
+        margin: 0 0;
+        
+    }
+    nav >ul{
+        height: 440px;
+        position: absolute;
+        top:98px; right: 0;
+        background-color: #fff;
+        z-index: 100;
+        opacity: 0;
+    }
+    nav>ul.active{
+        opacity: 0.95;
+        transition: all 1s;
+    }
+    nav >ul >li{
+        width: 100%;
+        padding: 0;
+    }
+    nav >ul >li >a{
+        color: #111;
+        display: block;
+        padding: 25px 0;
+    }
+    nav ul li:nth-child(3){
+        position: unsest;
+    }
+    nav ul li:nth-child(3) >ul >li{
+        float: none;
+        width: 100%;
+    }
+    nav >ul >li:nth-child(3):hover{
+        background-color: #fff;
+        border-radius: 0 0;
+    }
+    nav >ul .sub{
+        display: block;
+    }
+    .sub> li{
+        padding:0;
+    }
+    nav >ul >li:nth-child(3)>.sub{
+        position: unset;
+        background-color: #fff;
+        /* display: none; */
+    }
+    .sub{
+        padding: 0;
+    }
+    .sub> li:hover{
+        background-color: #ccc;
+    }
+    .sub> li{
+        padding: 0;
+    }
+    .sub> li> a{
+        color: rgb(146, 143, 143);
+        padding: 5px 0 ;
+        box-sizing: border-box;
+        display: block;
+    }
+    /* 메인 */
+    .s4_main >div >h4{
+        font-size: 15px;
+        line-height: 1.5em;
+    }
+    form{
+        margin-bottom: 200px;
+    }
+    form .inner div{
+        padding: 0;
+    }
+    label{
+        font-size: 20px;
+    }
+    #company, #cectors, #phone, #email{
+        height: 40px;
+        font-size: 20px;
+    }
+    #contact{
+        height: 200px;
+    }
+    .submit{
+        font-size: 20px;
+    }
+    
+}

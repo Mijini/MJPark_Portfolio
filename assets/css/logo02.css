@@ -1,0 +1,12 @@
+*{margin: 0; padding: 0;}
+body{
+    background: rgba(0, 0, 0, 0.8);
+}
+div{
+    width: 60%;
+    margin: 0 auto;
+}
+img{
+    display: block;
+    width: 100%;
+}

@@ -1,0 +1,800 @@
+/* 전체공통 */
+*{margin: 0; padding: 0;}
+.wrap{width: 100%;}
+.inner{width: 75%; margin: 0 auto;}
+.clear{clear: both;}
+h1{font-size: 5em;}
+h2{font-size: 4.375em;}
+h3{font-size: 3.75em;}
+h4{font-size: 3.125em;}
+h5{font-size: 2.5em;}
+h6{font-size: 1.875em;}
+p{font-size: 1.25em;}
+a{text-decoration: none;}
+@font-face {
+    font-family: 'SBAggroM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.SBAggroM{font-family: 'SBAggroM';}
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.NEXON_Lv2_Gothic{font-family: 'NEXON Lv2 Gothic';}
+/* 메인 */
+.main img{
+    width: 100%;
+    display: block;
+}
+/* 컨텐츠1 */
+.content1{
+    position: relative;
+}
+.con1_img{
+    width: 100%;
+    display: block;
+}
+.gumon{
+    width: 20%;
+    position: absolute;
+    top: 50%; left: 20%;
+    z-index: 1000;
+}
+.gumon img{
+    max-width: 100%;
+}
+/* 컨텐츠2 */
+.content2{
+    width: 100%; height: 1250px;
+    position: relative;
+}
+.con2_title{
+    position: absolute;
+    left: calc(50% - 272.5px);
+    text-align: center;
+    margin-top: 107px;
+}
+.con2_title h4{
+    position:relative;
+    z-index: 200;
+}
+.con2_title h6{
+    font-weight: lighter;
+    padding-top: 30px;
+
+}
+.con2_title div{
+    position: absolute;
+    top: 30px; left: 150px;
+    z-index: 100;
+}
+.up-on-scroll {
+    transition: transform 1s, opacity 1s;
+}
+.gray,.pink{
+    width: 50%; height: 1000px;
+}
+.gray >div >img{
+    margin: 60px 0 0 0;
+    width: 50%;
+    padding: 5%;
+}
+
+.gray{
+    background-color: #e2e1e0;
+    float: left;
+}
+.gray >div{
+    width: 100%; height: 100%;
+    padding-top: 270px;
+    text-align: center;
+}
+.gray h6{
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 25px;
+    /* padding-bottom: 95px; */
+    padding: 10%;
+    box-sizing: border-box;
+    
+}
+.gray span{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.pink{
+    background-color: #fdf2ed;
+    float: left;
+}
+.pink >div{
+    width: 100%;
+    position: relative;
+    padding-top: 270px;
+    text-align: center;
+}
+.pink h6{
+    font-weight: lighter;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 10%;
+    box-sizing: border-box;
+}
+.pink span{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: red;
+}
+.pink div:nth-child(1)>img:nth-child(1){
+    width: 80%;
+    margin-top: 70px;
+}
+.yellow_line{
+    position: absolute;
+    left: 240px; bottom: 70px;
+    z-index: 1;
+}
+/* .pink div:nth-child(2) img{
+    margin: 450px 0 0 -620px ;
+} */
+.orange{
+    width: 100%;
+    background-image: url(../images/content2_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 110px;
+    color: white;
+    float: left;
+}
+.orange h5{
+    font-weight: lighter;
+}
+.orange h3{
+    margin-top: 30px;
+    padding-bottom: 140px;
+    font-weight: lighter;
+}
+.orange span{
+    color: black;
+    font-size: 5rem;
+    font-weight: bold;
+}
+.vs{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* 컨텐츠3 */
+.content3{
+    position: relative;
+    float: left;
+}
+.content3 .con3_bg{
+    width: 100%;
+    display: block;
+}
+.content3 .con3_gif{
+    position: absolute;
+    left: 22%; top: 9%;
+    width: 18%;
+}
+/* 컨텐츠4 */
+.content4 img{
+    width: 100%;
+    display: block;
+}
+/* 컨텐츠5 */
+.content5 img{
+    width: 100%;
+}
+/* 컨텐츠6 */
+.content6 img{
+    width: 100%;
+    display: block;
+}
+/* 컨텐츠7 */
+.content7 img{
+    width: 100%;
+}
+
+/* 컨텐츠8 */
+.autoplay{
+    width: 70%;
+    margin: 0 auto;
+}
+.autoplay div img{
+    box-shadow: 4px 4px 5px #8c5943;
+}
+.content8{
+    width: 100%; height: 1214px;
+}
+.con8_text{
+    margin: 500px 0 100px;
+    text-align: center;
+}
+.con8_text h4{
+    font-size: 3.125rem;
+    display: inline-block;
+}
+.content8 h2 span{
+    color: #ed6535;
+}
+.con8_bg{
+    width: 100%;
+    background-image: url(../images/content8_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10% 0;
+}
+/*컨텐츠8 슬랙 수정*/
+.content8 .slick-slide{
+    margin: 20px 10px;
+}
+.content8 .center img{
+    max-width: 100%;
+}
+.content8 .a-left{
+    position: absolute; 
+    top: 50%; left: -100px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+.content8 .a-right{
+    position: absolute; 
+    top: 50%; right: -100px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+/* 컨텐츠9 */
+.content9{
+    width: 100%; height: 100%;
+}
+.content9 h2{
+    text-align: center;
+    padding: 235px 0 180px 0;
+}
+.content9 h2 span{
+    color: #ed6535;
+}
+.content9 >div{
+    margin: 20% 0;
+}
+.blog1{
+    width: 100%; height: 100%;
+    position: relative;
+}
+.blog1 div >img{
+    width: 100%;
+    display: block;
+}
+.blog1 >div:nth-child(1){
+    width: 40%;
+    float: left;
+}
+.blog1 >div:nth-child(2){
+    width: 50%;
+    float: left;
+    margin: 0 5%;
+}
+.blog1 >div:nth-child(2) >h6{
+    font-weight: lighter;
+}
+.blog1 >h6{
+    position: absolute;
+    right: 0; bottom: 0;
+    font-weight: lighter;
+    margin-right: 5%;
+}
+.blog1 h5{
+    padding: 10% 0;
+    box-sizing: border-box;
+}
+.name{
+    color: #c3bdbd;
+}
+
+.blog2{
+    width: 100%; height: 100%;
+    position: relative;
+}
+.blog2 div >img{
+    width: 100%;
+    display: block;
+}
+.blog2 >div:nth-child(1){
+    width: 50%;
+    float: left;
+    margin: 0 5%;
+}
+.blog2 >div:nth-child(1) >h6{
+    font-weight: lighter;
+    text-align: right;
+}
+.blog2 >div:nth-child(2){
+    width: 40%;
+    float: left;
+}
+.blog2 >h6{
+    position: absolute;
+    left: 0; bottom: 0;
+    font-weight: lighter;
+    margin-left: 5%;
+}
+.blog2 h5{
+    padding: 10% 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+.blog3{
+    width: 100%; height: 100%;
+    position: relative;
+}
+.blog3 div >img{
+    width: 100%;
+    display: block;
+}
+.blog3 >div:nth-child(1){
+    width: 40%;
+    float: left;
+}
+.blog3 >div:nth-child(2){
+    width: 50%;
+    float: left;
+    margin: 0 5%;
+}
+.blog3 >div:nth-child(2) >h6{
+    font-weight: lighter;
+}
+.blog3 >h6{
+    position: absolute;
+    right: 0; bottom: 0;
+    font-weight: lighter;
+    margin-right: 5%;
+}
+.blog3 h5{
+    padding: 10% 0;
+    box-sizing: border-box;
+}
+/* 컨텐츠10 */
+.content10{
+    width: 100%; height: 10.8%;
+    background-color: #fbfbfb;
+}
+.content10 .inner{
+    height: 100%;
+    position: relative;
+}
+.text1,.text2{
+    display: inline-block;
+    position: absolute;
+    width: 8%;
+}
+.text1 >img{
+    width: 100%;
+}
+.text2 >img{
+    width: 100%;
+}
+.text2{
+    right: 0; bottom: 0;
+}
+.insta_logo{
+    padding: 66px 0 53px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.insta_logo >img{
+    width: 35%;
+    text-align: center;
+}
+.content10 >.inner >a{
+    color: #5d5a5a;
+    font-weight: lighter;
+    text-align: center;
+    display: block;
+}
+.insta_img{
+    width: 75%; height: 56%;
+    margin: 96px 0 0 15%;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+.img_box{
+    width: 23%;
+    margin: 0 2% 1% 0;
+    position: relative;
+    float: left;
+}
+.img_box >img{
+    width: 100%;
+    display: block;
+}
+.con10_box{
+    width: 100%; height: 100%;
+    background-color: black; opacity: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 0; left: 0;
+    display: none;
+}
+.img_box:hover .con10_box{
+    display: block;
+}
+/* 푸터 */
+.black{
+    width: 100%; height: 550px;
+    background-color: #252525;
+    color: white;
+}
+.black .inner{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding-top: 120px;
+    
+}
+.footerLogo{
+    width: 14%;
+    float: left;
+}
+.footerLogo >img{
+    width: 100%;
+}
+.blackText{
+    width: 57%;
+    margin: 0 2%;
+    float: left;
+    padding-left: 13%;
+    box-sizing: border-box;
+}
+.sns{
+    width: 25%;
+    margin-top: 70px;
+    float: left;
+}
+.black .inner div:nth-child(2) p{
+    /* width: 400px; height: 170px; */
+    /* margin: 0 45px 0 50px; */
+    line-height: 1.5em;
+    font-size: 18px;
+}
+.sns >a >img{
+    cursor: pointer;
+    width: 20%;
+}
+.sns img:hover{
+    transform: scale(110%);
+    transition: all 1s;
+}
+/* 고정 문의하기 메뉴 */
+.fixed_menu{
+    width: 100%; height: 20%;
+    background-color: #ed6535;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+.fixed_menu .inner{
+    padding: 1.5%;
+    box-sizing: border-box;
+    width: 90%; height: 100%;
+}
+.fixed_menu >.inner >div:nth-child(1){
+    width: 15%;
+    float: left;
+}
+.fixed_menu >.inner >div:nth-child(2){
+    width: 45%;
+    float: left;
+    margin: 0 5%;
+}
+.fixed_menu >.inner >div:nth-child(2) >div{
+    float: left;
+}
+.fixed_menu >.inner >div:nth-child(2) >.telBox{
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+}
+.telBox >input{
+    width: 20%;
+    height: 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.telBox >input:nth-child(4){
+    width: 33%;
+}
+.fixed_menu >.inner >div:nth-child(3){
+    width: 30%;
+    float: left;
+    white-space:nowrap;
+}
+
+label{
+    font-size: 1.25em;
+}
+#name{
+    width: 100%; height: 50px;
+    background-color: white;
+    border:none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+#tel{
+    background-color: white;
+    border:none;
+    font-size: 1em;
+}
+#submit{
+    background-color: #f5ae5c;
+    border: none;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+.balck_line{
+    width: 3px; height: 75px;
+    background-color: black;
+    float: left;
+    margin-right: 15px;
+}
+/* 탑 버튼 */
+.topbtn{
+    background-color: rgba(0, 0, 0,0.5);
+    border-radius: 30px;
+    width: 50px; height: 50px;
+    text-align: center;
+    line-height: 3em;
+    font-weight: 900;
+    position: fixed;
+    top: 70%; right: 5%;
+    cursor: pointer;
+}
+.topbtn a{
+    text-decoration: none;
+    color: #fff;
+}
+.topbtn:hover{
+    background-color: #ed6535;
+}
+
+@media (max-width:960px){
+    .yellow_line{
+        position: absolute;
+        left: 140px; bottom: 45px;
+        z-index: 1;
+    }
+    .content9 >.blog1 >.NEXON_Lv2_Gothic >h5{
+        font-size: 35px;
+    }
+    .content9 >.blog1 >.NEXON_Lv2_Gothic >h6{
+        font-size: 20px;
+    }
+    .content9 >.blog1 >.name{
+        font-size: 20px;
+    }
+    .content9 >.blog2 >.blog2_text >h5{
+        font-size: 35px;
+    }
+    .content9 >.blog2 >.blog2_text >h6{
+        font-size: 20px;
+    }
+    .content9 >.blog2 >.name{
+        font-size: 20px;
+    }
+    .content9 >.blog3 >.NEXON_Lv2_Gothic >h5{
+        font-size: 35px;
+    }
+    .content9 >.blog3 >.NEXON_Lv2_Gothic >h6{
+        font-size: 20px;
+    }
+    .content9 >.blog3 >.name{
+        font-size: 20px;
+    }
+    .black .inner div:nth-child(2) p{
+        font-size: 13px;
+    }
+    .fixed_menu >.inner >div:nth-child(3) >h4{
+        font-size: 40px;
+    }
+}
+@media (max-width:768px){
+    .gray >div >h6{
+        font-size: 20px;
+    }
+    .gray span{
+        font-size: 30px;
+    }
+    .pink >div >h6{
+        font-size: 20px;
+    }
+    .pink span{
+        font-size: 30px;
+    }
+    .yellow_line{
+        position: absolute;
+        left: 100px; bottom: 35px;
+        z-index: 1;
+    }
+    .gray,.pink{
+        height: 800px;
+    }
+    .orange{
+        padding-top: 150px;
+    }
+    .orange h5{
+        font-weight: lighter;
+    }
+    .orange h3{
+        font-size: 50px;
+    }
+    .orange span{
+        font-size: 4.5rem;
+    }
+    .autoplay{
+        width: 90%;
+    }
+    .content8 .a-left{
+        opacity: 0;
+    }
+    .content8 .a-right{
+        opacity: 0;
+    }
+    .sns{
+        margin: 0;
+        padding-left: 1%;
+        box-sizing: border-box;
+    }
+    .sns >a{
+        width: 40%;
+        margin: 0;
+        float: left;
+        padding: 2%;
+        box-sizing: border-box;
+    }
+    .sns >a >img{
+        width: 100%;
+        display: block;
+    }
+    .fixed_menu >.inner >div:nth-child(3) >p{
+        margin-top: 10px;
+    }
+    .fixed_menu >.inner >div:nth-child(3) >h4{
+        font-size: 30px;
+    }
+}
+@media (max-width:480px){
+    .gray >div >h6{
+        font-size: 19px;
+    }
+    .pink >div >h6{
+        font-size: 19px;
+    }
+    .gray,.pink{
+        height: 520px;
+    }
+    .gray >div >img{
+        margin: 60px 0 0 0;
+        width: 100%;
+        padding: 0 5% 0 0;
+    }
+    .pink div:nth-child(1)>img:nth-child(1){
+        width: 100%;
+    }
+    .gray h6{
+        padding: 0 0;
+    }
+    .pink h6{
+        padding: 13% 0 0 0;
+    }
+    .vs{
+        position: absolute;
+        top: 43%; left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .vs >img{
+        width: 70%;
+    }
+
+    /* content9 */
+    .blog1 >div:nth-child(1){
+        width: 100%;
+    }
+    .blog1 >div:nth-child(2){
+        width: 100%;
+        margin: auto;
+        padding: 7%;
+        box-sizing: border-box;
+    }
+    .blog1 >h6{
+        position: unset;
+        margin: 5% 0 0 7%;
+    }
+    .blog2{
+        display: none;
+    }
+    .blog3 >div:nth-child(1){
+        width: 100%;
+    }
+    .blog3 >div:nth-child(2){
+        width: 100%;
+        margin: auto;
+        padding: 7%;
+        box-sizing: border-box;
+    }
+    .blog3 >h6{
+        position: unset;
+        margin: 5% 0 0 7%;
+    }
+    .insta_logo >img{
+        width: 100%;
+    }
+    .insta_img >div:nth-child(10),div:nth-child(11),div:nth-child(12),div:nth-child(13),div:nth-child(14),div:nth-child(15),div:nth-child(16){
+        display: none;
+    }
+    .insta_img{
+        width: 100%;
+        margin: 96px 0 0px 10px;
+    }
+    .img_box{
+        width: 31%;
+    }
+    .footerLogo{
+        width: 100%;
+        float: none;
+        margin: 0 0 0 25%;
+    }
+    .footerLogo >img{
+        width: 50%;
+    }
+    .black{
+        height: 1100px;
+    }
+    .blackText{
+        width: 100%;
+        margin: 70px 0 0 0;
+        float: none;
+        padding-left: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .black .inner div:nth-child(2) p{
+        font-size: 17px;
+    }
+    .sns{
+        width: 100%;
+        margin: 70px 0 100px 10%;
+        padding-left: 0;
+    }    
+    .fixed_menu >.inner >div:nth-child(1),div:nth-child(2) >label{
+        display: none;
+    }
+    .telBox >input:nth-child(1),input:nth-child(2),input:nth-child(3){
+        display: none;
+    }
+    .telBox >#submit{
+        width: 100%;
+    }
+    .fixed_menu .inner{
+        padding: 20px 0 0 0;
+        box-sizing: border-box;
+    }
+    .fixed_menu >.inner >div:nth-child(2){
+        width: 40%;
+        margin: 0 5% 0 0;
+    }
+    .fixed_menu >.inner >div:nth-child(3){
+        width: 55%;
+    }
+}
+
